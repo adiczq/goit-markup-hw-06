@@ -641,7 +641,19 @@ body {
   width: 448px;
 }
 
+.label-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  fill: var(--black);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.label-box:focus-within {
+  fill: var(--blue);
+}
+
 .label {
+  position: relative;
   font-size: 0.75rem;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -649,16 +661,18 @@ body {
   margin-bottom: 4px;
 }
 
-.label-box {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-}
-
 .label-input {
-  height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  background-color: transparent;
+  padding: 11px 12px 11px 42px;
+  color: var(--grey);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.label-input:focus-within {
+  outline: none;
+  border-color: var(--blue);
 }
 
 .modal-textarea {
@@ -677,4 +691,13 @@ body {
 
 .modal-checkbox-link {
   color: var(--blue);
+}
+
+.input-icons {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 38px;
+  left: 16px;
+  transform: translateY(-50%);
 }

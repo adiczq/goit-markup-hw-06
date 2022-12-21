@@ -64,48 +64,44 @@
               <div class="modal-header-box">
                 <h3 class="modal-header">Zostaw swoje dane w formularzu poniżej</h3>
               </div>
-              <form>
-                <div class="modal-box">
-                  <div class="label-box">
-                    <label class="label" for="user_name"> Imie </label>
-                    <input
-                      class="label-input"
-                      type="text"
-                      name="username"
-                      id="user_name"
-                      placeholder=""
-                    />
-                  </div>
-                  <div class="label-box">
-                    <label class="label" for="user_phone_number"> Telefon </label>
-                    <input
-                      class="label-input"
-                      type="tel"
-                      name="phone_number"
-                      id="user_phone_number"
-                      placeholder=""
-                    />
-                  </div>
-                  <div class="label-box">
-                    <label class="label" for="user_email"> Email </label>
-                    <input
-                      class="label-input"
-                      type="email"
-                      name="email"
-                      id="user_email"
-                      placeholder=""
-                    />
-                  </div>
-                  <div class="label-box">
-                    <label class="label" for="user_feedback"> Komentarz </label>
-                    <textarea
-                      class="label-input modal-textarea"
-                      name="feedback"
-                      id="user_feedback"
-                      rows="5"
-                      placeholder="Wprowadź tekst"
-                    ></textarea>
-                  </div>
+              <form class="modal-box">
+                <div class="label-box">
+                  <label class="label" for="user_name">
+                    Imie
+                    <svg class="input-icons">
+                      <use href="images/icons.svg#icon-person"></use>
+                    </svg>
+                  </label>
+                  <input class="label-input" type="text" name="username" id="user_name" />
+                </div>
+                <div class="label-box">
+                  <label class="label" for="user_phone">
+                    Telefon
+                    <svg class="input-icons">
+                      <use href="images/icons.svg#icon-phone"></use>
+                    </svg>
+                  </label>
+                  <input class="label-input" type="tel" name="phone_number" id="user_phone" />
+                </div>
+                <div class="label-box">
+                  <label class="label" for="user_email">
+                    Email
+                    <svg class="input-icons">
+                      <use href="images/icons.svg#icon-email"></use>
+                    </svg>
+                  </label>
+                  <input class="label-input" type="email" name="email" id="user_email" />
+                </div>
+
+                <div class="label-box">
+                  <label class="label" for="user_feedback"> Komentarz </label>
+                  <textarea
+                    class="label-input modal-textarea"
+                    name="feedback"
+                    id="user_feedback"
+                    rows="5"
+                    placeholder="Wprowadź tekst"
+                  ></textarea>
                 </div>
 
                 <label>
