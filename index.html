@@ -102,15 +102,20 @@
                     placeholder="Wprowadź tekst"
                   ></textarea>
                 </div>
-                <label>
-                  <input
-                    class="modal-checkbox"
-                    type="checkbox"
-                    name="regulations"
-                    value="regulations"
-                  />
+                <label class="modal-checkbox">
+                  <input class="checkbox" type="checkbox" name="regulations" value="regulations" />
+                  <svg class="checkbox-icons-checked">
+                    <use href="images/icons.svg#icon-checked"></use>
+                  </svg>
+                  <svg class="checkbox-icons">
+                    <use href="images/icons.svg#icon-checkbox"></use>
+                  </svg>
+
                   Oświadczam iż akceptuję <a class="modal-checkbox-link" href="#">Regulamin</a> i
-                  <a class="modal-checkbox-link" href="#">Politykę Prywatności</a>.
+                  <a class="modal-checkbox-link" href="#">Politykę Prywatności</a>.</label
+                >
+                <label class="modal-button-box">
+                  <button class="modal-button" type="submit">Wyślij</button>
                 </label>
               </form>
             </div>
