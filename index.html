@@ -72,7 +72,7 @@
                       <use href="images/icons.svg#icon-person"></use>
                     </svg>
                   </label>
-                  <input class="label-input" type="text" name="username" id="user_name" />
+                  <input class="label-input" type="text" name="username" id="user_name" required />
                 </div>
                 <div class="label-box">
                   <label class="label" for="user_phone">
@@ -81,7 +81,13 @@
                       <use href="images/icons.svg#icon-phone"></use>
                     </svg>
                   </label>
-                  <input class="label-input" type="tel" name="phone_number" id="user_phone" />
+                  <input
+                    class="label-input"
+                    type="tel"
+                    name="phone_number"
+                    id="user_phone"
+                    required
+                  />
                 </div>
                 <div class="label-box">
                   <label class="label" for="user_email">
@@ -90,7 +96,7 @@
                       <use href="images/icons.svg#icon-email"></use>
                     </svg>
                   </label>
-                  <input class="label-input" type="email" name="email" id="user_email" />
+                  <input class="label-input" type="email" name="email" id="user_email" required />
                 </div>
                 <div class="label-box">
                   <label class="label" for="user_feedback"> Komentarz </label>
@@ -103,7 +109,13 @@
                   ></textarea>
                 </div>
                 <label class="modal-checkbox">
-                  <input class="checkbox" type="checkbox" name="regulations" value="regulations" />
+                  <input
+                    class="checkbox"
+                    type="checkbox"
+                    name="regulations"
+                    value="regulations"
+                    required
+                  />
                   <svg class="checkbox-icons-checked">
                     <use href="images/icons.svg#icon-checked"></use>
                   </svg>
@@ -114,9 +126,9 @@
                   Oświadczam iż akceptuję <a class="modal-checkbox-link" href="#">Regulamin</a> i
                   <a class="modal-checkbox-link" href="#">Politykę Prywatności</a>.</label
                 >
-                <label class="modal-button-box">
+                <div class="modal-button-box">
                   <button class="modal-button" type="submit">Wyślij</button>
-                </label>
+                </div>
               </form>
             </div>
           </div>
@@ -401,7 +413,7 @@
           </address>
         </div>
         <div class="foot-logo">
-          <h2 class="lorem highlightwhite">DOŁĄCZ DO NAS</h2>
+          <h2 class="lorem highlightwhite">Dołącz do nas</h2>
           <div class="footer-icons-box">
             <a class="icons-link" href="https://www.instagram.com/" target="_blank">
               <svg class="footer-icons" width="44" height="44" viewBox="0 0 22 44">
@@ -425,9 +437,28 @@
             </a>
           </div>
         </div>
+        <div class="foot-logo">
+          <h2 class="lorem highlightwhite">Zapisz się do newslettera</h2>
+          <form class="newsletter">
+            <label>
+              <input
+                class="footer-input"
+                type="email"
+                name="newsletter"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button class="footer-button" type="submit">
+              Zapisz się
+              <svg width="24" height="24">
+                <use href="images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-
     <script src="./js/modal.js"></script>
   </body>
 </html>
