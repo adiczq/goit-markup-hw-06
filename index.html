@@ -72,7 +72,16 @@
                       <use href="images/icons.svg#icon-person"></use>
                     </svg>
                   </label>
-                  <input class="label-input" type="text" name="username" id="user_name" required />
+                  <input
+                    class="label-input"
+                    type="text"
+                    name="name"
+                    id="user_name"
+                    pattern="^[a-zA-Z]+"
+                    placeholder="Jan"
+                    title="Wpisz imię"
+                    required
+                  />
                 </div>
                 <div class="label-box">
                   <label class="label" for="user_phone">
@@ -86,6 +95,9 @@
                     type="tel"
                     name="phone_number"
                     id="user_phone"
+                    pattern="(\+48\d{9})|(\+(?!48)\d+)"
+                    placeholder="+48111111111"
+                    title="Użyj formatu międzynarodowego (np. +48123456789, +498963648018)"
                     required
                   />
                 </div>
@@ -96,7 +108,15 @@
                       <use href="images/icons.svg#icon-email"></use>
                     </svg>
                   </label>
-                  <input class="label-input" type="email" name="email" id="user_email" required />
+                  <input
+                    class="label-input"
+                    type="email"
+                    name="email"
+                    id="user_email"
+                    placeholder="info@devstudio.com"
+                    title="Wpisz Twój adres E-mail"
+                    required
+                  />
                 </div>
                 <div class="label-box">
                   <label class="label" for="user_feedback"> Komentarz </label>
@@ -106,6 +126,7 @@
                     id="user_feedback"
                     rows="5"
                     placeholder="Wprowadź tekst"
+                    title="Możesz zostawić dla nas wiadomość"
                   ></textarea>
                 </div>
                 <label class="modal-checkbox">
